@@ -15,12 +15,12 @@ public class TimerScript : MonoBehaviour
 
     public bool isTimerSet = false;
 
-    void Start()
+    private void Start()
     {
         ResetTimer();
     }
 
-    void Update()
+    private void Update()
     {
         if (isTimerRunning && isTimerSet)
         {

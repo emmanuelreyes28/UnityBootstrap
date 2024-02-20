@@ -11,12 +11,12 @@ public class Jump : MonoBehaviour
     private Rigidbody rb;
     private bool isGrounded = true;
 
-    void Start()
+    private void Start()
     {
         rb = GetComponent<Rigidbody>();
     }
 
-    void Update()
+    private void Update()
     {
         if (Input.GetKeyDown(jumpKey) && isGrounded)
         {
