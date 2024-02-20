@@ -11,12 +11,12 @@ public class Move : MonoBehaviour
 
     private Rigidbody rb;
 
-    void Start()
+    private void Start()
     {
         rb = GetComponent<Rigidbody>();
     }
 
-    void Update()
+    private void Update()
     {
         float speed = Input.GetKey(runKey) ? runSpeed : walkSpeed;
 

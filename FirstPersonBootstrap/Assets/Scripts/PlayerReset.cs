@@ -10,7 +10,7 @@ public class PlayerReset : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            ResetPlayer(other.gameObject);
+            ResetPlayer(other.tranform);
         }
         else
         {
@@ -18,8 +18,8 @@ public class PlayerReset : MonoBehaviour
         }
     }
 
-    public void ResetPlayer(GameObject other)
+    public void ResetPlayer(Transform other)
     {
-        other.transform.position = spawnPoint.position;
+        other.position = spawnPoint.position;
     }
 }

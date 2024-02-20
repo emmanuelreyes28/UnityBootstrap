@@ -11,14 +11,14 @@ public class Crouch : MonoBehaviour
     private Rigidbody rb;
     private float normalYLocalPosition = 1;
 
-    void Start()
+    private void Start()
     {
         rb = GetComponent<Rigidbody>();
         normalYLocalPosition = rb.transform.localScale.y;
     }
 
 
-    void Update()
+    private void Update()
     {
         float currentYVal = Input.GetKey(crouchKey)
                                     ? normalYLocalPosition - crouchAmount
